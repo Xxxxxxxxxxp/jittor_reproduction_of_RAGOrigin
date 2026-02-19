@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import argparse
 import json
@@ -18,13 +13,6 @@ from OpenAIAPI import openaigenerator
 from judge_LLM_training import initialize_jittor_model
 
 
-# In[2]:
-
-
-
-
-
-# In[3]:
 
 
 def split_y_pred(y_pred, scope_sizes):
@@ -177,31 +165,31 @@ def main():
     }
     # Qwen2.5-1.5B-Instruct 配置
     Qwen_2_5_1B_config={
-        "vocab_size": 151936,           # Qwen 统一大词表
-        "hidden_size": 1536,            # 1.5B 特有维度
-        "intermediate_size": 8960,      # MLP 维度
-        "num_hidden_layers": 28,        # 层数 (和 Llama 3B 一样，但维度小)
-        "num_attention_heads": 12,      # 注意力头数 (1536 / 12=128 head_dim)
-        "num_key_value_heads": 2,       # GQA (2组 KV, 也就是 6:1 的比例)
-        "max_position_embeddings": 32768, # 32k 上下文
-        "rope_theta": 1000000.0,        # Qwen theta
-        "rms_norm_eps": 1e-6,           # 1e-6
-        "tie_word_embeddings": True,    # 1.5B 也是共享权重的
-        "attention_bias": True          # 【必须】开启 QKV 的 Bias
+        "vocab_size": 151936,         
+        "hidden_size": 1536,           
+        "intermediate_size": 8960,     
+        "num_hidden_layers": 28,       
+        "num_attention_heads": 12,      
+        "num_key_value_heads": 2,       
+        "max_position_embeddings": 32768, 
+        "rope_theta": 1000000.0,        
+        "rms_norm_eps": 1e-6,           
+        "tie_word_embeddings": True,    
+        "attention_bias": True          
     }
     # Qwen2.5-3B-Instruct 官方配置
     Qwen_2_5_3B_config={
-        "vocab_size": 151936,           # Qwen 统一大词表
-        "hidden_size": 2560,            # 3B 特有维度
-        "intermediate_size": 6912,      # MLP 维度
-        "num_hidden_layers": 36,        # 层数增加到 36 层
-        "num_attention_heads": 20,      # 2560 / 20=128 head_dim
-        "num_key_value_heads": 4,       # GQA (5:1 比例)
+        "vocab_size": 151936,           
+        "hidden_size": 2560,           
+        "intermediate_size": 6912,    
+        "num_hidden_layers": 36,       
+        "num_attention_heads": 20,      
+        "num_key_value_heads": 4,       
         "max_position_embeddings": 32768, 
         "rope_theta": 1000000.0,
         "rms_norm_eps": 1e-6,
-        "tie_word_embeddings": False,   # 【关键差异】3B 不共享权重，lm_head 是独立的
-        "attention_bias": True          # Qwen2.5 全系开启 Bias
+        "tie_word_embeddings": False,  
+        "attention_bias": True          
     }
     generator,judge_llm,model,tokenizer=setup_model(args,Qwen_2_5_1B_config)
 
