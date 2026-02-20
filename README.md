@@ -43,3 +43,8 @@ export OPENAI_API_URL="YOUR_OPENAI_BASE_URL"
 | Pytorch  | 0.0  |   |0.002|0.0|0.0|
 | Jittor | 0.0  | 0.0  |0.0|0.0|0.0|
 | 作者原代码 | 0.0  | 0.0  |0.0|0.0|0.0|
+
+|  | Gen_Loss_Adv | Gen_Loss_Sty |Gen_Loss_Rec|
+|--------|--------|--------|--------|
+| Pytorch  | 21.046  | 2.236  |1.632|
+| Jittor | 582.015  | 13.116  |3.017|
