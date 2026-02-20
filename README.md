@@ -39,7 +39,7 @@ export OPENAI_API_URL="YOUR_OPENAI_BASE_URL"
 
 
 | FNR | Llama-3.2-1B-Instruct |Llama-3.2-3B-Instruct|gpt-4o-mini_Qwen2.5-0.5B-Instruct|gpt-4o-mini_Qwen2.5-1.5B-Instruct|gpt-4o-mini_Qwen2.5-3B-Instruct|
-|--------|--------|--------|--------|
+|--------|--------|--------|----------|
 | Pytorch  | 0.0  |0.0|0.002|0.0 | 0.0|
 | Jittor | 0.0  | 0.0  |0.0| 0.0|  0.0|
 | 作者原代码 | 0.0  | 0.0  |0.0|0.0|0.0|
