@@ -45,6 +45,11 @@ export OPENAI_API_URL="YOUR_OPENAI_BASE_URL"
 | Jittor | 0.0  | 0.0  |0.0| 0.0|  0.0|
 | 作者原代码 | 0.0  | 0.0  |0.0|0.0|0.0|
 
+
+![上述结果的柱状图](/result_bar_chart/Figure_1.png)
+![上述结果的柱状图](/result_bar_chart/Figure_2.png)
+![上述结果的柱状图](/result_bar_chart/Figure_3.png)
+
 实验结果2.在相同proxy_LLM的情况下(恒为Llama-3.2-1B-Instruct)改变judge_LLM
 | DACC | gpt-3.5-turbo |gpt-4o|gpt-4o-mini|deepseek-V3|Llama-3.2-8B-Instruct|llama-3-70b-instruct|qwen2.5-7b-instruct|qwen2.5-32b-instruct|qwen2.5-72b-instruct|
 |--------|--------|--------|--------|---------|-----------|-------------|------------|--------|-----------|
@@ -65,5 +70,9 @@ export OPENAI_API_URL="YOUR_OPENAI_BASE_URL"
 | Pytorch  | 0.0  |  0.0 |0.0|0.0|0.0|0.0|0.0|0.0|0.0|
 | Jittor | 0.0 |0.0  |0.0|0.0|0.0||0.0|0.0|0.0|
 | 作者原代码 |0.0  | 0.0  |0.0|0.0|0.0|0.0|0.0|0.0|0.0|
+
+![上述结果的柱状图](/result_bar_chart/Figure_4.png)
+![上述结果的柱状图](/result_bar_chart/Figure_5.png)
+![上述结果的柱状图](/result_bar_chart/Figure_6.png)
 
 具体实验结果以及json文件我保存在result.7z文件中
